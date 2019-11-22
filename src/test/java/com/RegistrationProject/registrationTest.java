@@ -6,20 +6,20 @@ import org.junit.Test;
 public class registrationTest {
     @Test
     public void giveFirstname_WhenProper_ShouldReturnTrue(){
-        UserValidator validator = new UserValidator();
-        Boolean result=validator.validateFirstName("Sangeeta");
+        UserValidator firstNameValidator = new UserValidator();
+        Boolean result=firstNameValidator.validateFirstName("Sangeeta");
         Assert.assertTrue(result);
     }
     @Test
     public void givenFirstname_WhenLessThanThree_ShouldReturnTrue(){
-        UserValidator validator = new UserValidator();
-        Boolean result = validator.validateFirstName("sang");
+        UserValidator firstNameValidator = new UserValidator();
+        Boolean result = firstNameValidator.validateFirstName("sang");
         Assert.assertFalse(result);
     }
     @Test
     public void givenFirstname_WhenFirstLetterNotCapital_ShouldReturnFalse(){
-        UserValidator validator = new UserValidator();
-        Boolean result = validator.validateFirstName("sangeeta");
+        UserValidator firstNameValidator = new UserValidator();
+        Boolean result = firstNameValidator.validateFirstName("sangeeta");
         Assert.assertFalse(result);
     }
 }
