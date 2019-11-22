@@ -22,4 +22,22 @@ public class registrationTest {
         Boolean result = firstNameValidator.validateFirstName("sangeeta");
         Assert.assertFalse(result);
     }
+    @Test
+    public void giveLastname_WhenProper_ShouldReturnTrue(){
+        UserValidator validator = new UserValidator();
+        Boolean result=validator.validateLastName("Sangeeta");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenLastname_WhenLessThanThree_ShouldReturnTrue(){
+        UserValidator validator = new UserValidator();
+        Boolean result = validator.validateLastName("sang");
+        Assert.assertFalse(result);
+    }
+    @Test
+    public void givenLastname_WhenFirstLetterNotCapital_ShouldReturnFalse(){
+        UserValidator validator = new UserValidator();
+        Boolean result = validator.validateLastName("sangeeta");
+        Assert.assertFalse(result);
+    }
 }

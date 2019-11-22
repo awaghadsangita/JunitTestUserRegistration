@@ -8,4 +8,8 @@ public class UserValidator {
         return Pattern.compile("^[A-Z]{1}[a-z]{2,}$").matcher(fname).matches();
     }
 
+    public Boolean validateLastName(String lname) {
+        return Pattern.compile("^[A-Z]{1}[a-z]{2,}$").matcher(lname).matches();
+    }
+
 }
