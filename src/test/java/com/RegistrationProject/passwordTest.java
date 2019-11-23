@@ -42,9 +42,9 @@ public class passwordTest {
                 {"Sangita123",true},
                 {"SANGITA123",true},
                 {"123sangitaaa",false},
-                {"123SangitaA",true},*/
+                {"123SangitaA",true}*/
                 //UC_8
-                {"sangeetAaa",false},
+/*                {"sangeetAaa",false},
                 {"sangeetaaa",false},
                 {"Sangita",false},
                 {"sangita123",false},
@@ -52,7 +52,19 @@ public class passwordTest {
                 {"SangitaA123",true},
                 {"Sangita123",true},
                 {"12Sangita",true},
-                {"sangita1A",true}
+                {"sangita1A",true}*/
+                //UC_9
+                {"sangeetAaa",false},
+                {"sangeetaaa",false},
+                {"Sangita",false},
+                {"sangita123",false},
+                {"sangitaAAA",false},
+                {"SangitaA123",false},
+                {"Sangita123",false},
+                {"12Sangita",false},
+                {"sangita1A",false},
+                {"!sangitaA123",true},
+                {"!!!sangita12A",false}
         };
 
         return Arrays.asList(data);

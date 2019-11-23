@@ -26,8 +26,12 @@ public class UserValidator {
 //        String pwdRegex2_uc7="^(?=.*?[A-Z]).{8,}$";
 //        Boolean p1=Pattern.compile(pwdRegex2_uc7).matcher(pwd).matches();
         //========== UC_8 ============
-        String pwdRegex2_uc8="^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$";
-        Boolean p1=Pattern.compile(pwdRegex2_uc8).matcher(pwd).matches();
+//        String pwdRegex2_uc8="^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$";
+//        Boolean p1=Pattern.compile(pwdRegex2_uc8).matcher(pwd).matches();
+        //========== UC_9 ============
+        String pwdRegex2_uc9="^(?=.[a-zA-Z0-9]*?[A-Z])(?=.[a-zA-Z0-9]*?[0-9])(?=.*?[!@#$%^&*(),.?\":{}|<>]).{8,}$";
+        Boolean p1=Pattern.compile(pwdRegex2_uc9).matcher(pwd).matches();
+
         if (p1 ){
             return true;
         }
