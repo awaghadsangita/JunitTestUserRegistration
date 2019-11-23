@@ -1,0 +1,10 @@
+* [32mmaster[m
+  uc1_validateFirstName[m
+  uc2_validateLastName[m
+  uc3_validateEmail[m
+  uc4_validateMobileNumber[m
+  uc5_validatePassword[m
+  uc6_passwordContainMinimum8Letters[m
+  uc7_passwordContainsMinimum1Uppercase[m
+  uc8_passwordContainsMinimum1Digit[m
+  uc9_passwordMustContain1Symbol[m

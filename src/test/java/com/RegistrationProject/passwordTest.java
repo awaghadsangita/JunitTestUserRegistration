@@ -30,30 +30,6 @@ public class passwordTest {
     public static Collection<Object[]> data()
     {
         Object[][] data = new Object[][] {
-                //UC_6
-/*
-                { "sangita",false},
-                {"sangita123",true},
-                {"Sangita123",true},
-                {"SANGITA123",true} */
-                //UC_7
-/*                { "sangita",false},
-                {"sangita123",false},
-                {"Sangita123",true},
-                {"SANGITA123",true},
-                {"123sangitaaa",false},
-                {"123SangitaA",true}*/
-                //UC_8
-/*                {"sangeetAaa",false},
-                {"sangeetaaa",false},
-                {"Sangita",false},
-                {"sangita123",false},
-                {"sangitaAAA",false},
-                {"SangitaA123",true},
-                {"Sangita123",true},
-                {"12Sangita",true},
-                {"sangita1A",true}*/
-                //UC_9
                 {"sangeetAaa",false},
                 {"sangeetaaa",false},
                 {"Sangita",false},
