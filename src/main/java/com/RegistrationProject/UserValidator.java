@@ -21,14 +21,13 @@ public class UserValidator {
     public Boolean validatePassword(String pwd){
         String pwdRegex1="^[a-zA-Z0-9]*$";
         Boolean p1=Pattern.compile("^[a-zA-Z0-9]*$").matcher(pwd).matches();
-        Boolean p2=Pattern.compile("[[:upper:]]{1}").matcher(pwd).matches();
-        if (pwd.length() > 8 && p1 && p2){
+
+        if (pwd.length() > 8 && p1 ){
             return true;
         }
         else{
             return false;
         }
-
     }
 
 
