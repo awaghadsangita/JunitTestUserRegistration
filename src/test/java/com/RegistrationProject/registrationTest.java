@@ -83,5 +83,15 @@ public class registrationTest {
         Assert.assertFalse(result);
     }
 
+    @Test
+    public void givenPassword_WhenLessThanEightLetter_ShouldReturnFalse() {
+        UserValidator validator=new UserValidator();
+        Assert.assertFalse(validator.validatePassword("sangita"));
+    }
 
+    @Test
+    public void givenPassword_WhenMoreThanEightLetter_ShouldReturnTrue() {
+        UserValidator validator=new UserValidator();
+        Assert.assertTrue(validator.validatePassword("sangita123"));
+    }
 }

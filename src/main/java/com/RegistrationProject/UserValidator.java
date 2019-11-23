@@ -18,5 +18,18 @@ public class UserValidator {
     public Boolean validateMobileNumber(String ph) {
         return Pattern.compile("^[0-9]{2}[[:space:]]{1}[0-9]{10}$").matcher(ph).matches();
     }
+    public Boolean validatePassword(String pwd){
+        String pwdRegex1="^[a-zA-Z0-9]*$";
+        Boolean p1=Pattern.compile("^[a-zA-Z0-9]*$").matcher(pwd).matches();
+        Boolean p2=Pattern.compile("[[:upper:]]{1}").matcher(pwd).matches();
+        if (pwd.length() > 8 && p1 && p2){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+
 
 }
