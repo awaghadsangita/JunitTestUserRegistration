@@ -40,4 +40,7 @@ public class registrationTest {
         Boolean result = validator.validateLastName("sangeeta");
         Assert.assertFalse(result);
     }
+
+    public static class emailTest {
+    }
 }
